@@ -6,8 +6,18 @@
   .wrapper {
     width: inherit;
     height: inherit;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     display: flex;
+    padding-left: 5%;
+
+    .poster {
+      z-index: 100;
+    }
+    .actions {
+      position: absolute;
+      right: 2%;
+      z-index: 99;
+    }
   }
 }

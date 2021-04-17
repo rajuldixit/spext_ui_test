@@ -23,12 +23,37 @@
       }
     }
     .media-details {
+      min-width: 210px;
+      padding-left: 20px;
       .label, .media-name, .add-ons  {
         height: 33%;
+        min-height: 100px;
       }
       .label {
         span {
           font-size: 18px;
+        }
+      }
+      .add-ons {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        .wrap {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          .like, .share, .add-to-playlist {
+            background: #F8F8F8;
+            border-radius: 50%;
+            padding: 10px;
+            height: 32px;
+            width: 32px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            box-shadow: -10px -10px 15px #FFFFFF, 10px 10px 10px rgba(0, 0, 0, 0.05), inset 10px 10px 10px rgba(0, 0, 0, 0.05), inset -10px -10px 20px #FFFFFF;
+          }
         }
       }
     }
