@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-player-poster',
@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerPosterComponent implements OnInit {
 
+  @Input() currentSong: any;
+
   constructor() { }
 
-  ngOnInit(): void {
-    console.log('zsdxfgh')
-  }
+  ngOnInit(): void {}
+
+  ngOnChanges() {}
 
 }

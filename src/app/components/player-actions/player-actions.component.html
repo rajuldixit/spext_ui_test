@@ -1,3 +1,47 @@
 <div class="player-actions">
-  wertyuiolkjhgfcfvbnm,wertyuiolkjhgfcfvbnm,wertyuiolkjhgfcfvbnm,wertyuiolkjhgfcfvbnm,wertyuiolkjhgfcfvbnm,
+    <div class="wrapper">
+      <div class="player-events">
+        <div class="events">
+          <div class="left-side">
+             <div class="icon-wrapper">
+               <img src="./../../../assets/images/Group (1).svg">
+             </div>
+             <div class="icon-wrapper">
+                <img src="./../../../assets/images/Group (1).svg">
+              </div>
+          </div>
+          <div class="center">
+            <div class="icon-wrapper icon-wrapper-small" (click)="prevTrack()">
+              <div class="icon-bg icon-bg-small">
+                <img src="./../../../assets/images/Vector 1.svg">
+              </div>
+            </div>
+            <div class="icon-wrapper icon-wrapper-big">
+              <div class="icon-bg icon-bg-big">
+                <img src="./../../../assets/images/Group 3.svg">
+              </div>
+            </div>
+            <div class="icon-wrapper icon-wrapper-small" (click)="nextTrack()">
+              <div class="icon-bg icon-bg-small">
+                <img src="./../../../assets/images/Vector 2.svg">
+              </div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="icon-wrapper">
+              <img src="./../../../assets/images/Group (1).svg">
+            </div>
+            <div class="icon-wrapper">
+               <img src="./../../../assets/images/Group (1).svg">
+             </div>
+          </div>
+        </div>
+        <div class="tracker">
+          <app-audio-tracker></app-audio-tracker>
+        </div>
+      </div>
+      <div class="slider-btn">
+        <img src="./../../../assets/images/Rectangle 10.svg">
+      </div>
+    </div>
 </div>

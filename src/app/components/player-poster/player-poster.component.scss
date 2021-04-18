@@ -1,7 +1,9 @@
+@import './../../../assets/colors/colors.scss';
+
 .player-poster {
   padding: 50px;
-  background: #F8F8F8;
-  border: 1px solid #FFFFFF;
+  background: $playerBGColor;
+  border: 1px solid $white;
   box-sizing: border-box;
   box-shadow: 40px 30px 80px rgba(54, 48, 116, 0.3);
   border-radius: 60px;
@@ -12,7 +14,8 @@
     align-items: center;
 
     .media-poster {
-      background: #F8F8F8;
+      max-width: 240px;
+      background: $playerBGColor;
       border-radius: 40px;
       padding: 15px;
       box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05), inset -10px -10px 20px #FFFFFF;
@@ -20,6 +23,7 @@
 
       img {
         border-radius: 30px;
+        width: 100%;
       }
     }
     .media-details {
@@ -32,6 +36,7 @@
       .label {
         span {
           font-size: 18px;
+          color: $lightTextColor;
         }
       }
       .add-ons {
@@ -44,7 +49,7 @@
           width: 100%;
           justify-content: space-between;
           .like, .share, .add-to-playlist {
-            background: #F8F8F8;
+            background: $playerBGColor;
             border-radius: 50%;
             padding: 10px;
             height: 32px;
@@ -54,6 +59,24 @@
             align-items: center;
             box-shadow: -10px -10px 15px #FFFFFF, 10px 10px 10px rgba(0, 0, 0, 0.05), inset 10px 10px 10px rgba(0, 0, 0, 0.05), inset -10px -10px 20px #FFFFFF;
           }
+        }
+      }
+      .media-name {
+        .song-name {
+          font-size: 30px;
+          font-weight: bold;
+          color: $mediumTextColor;
+          line-height: 2;
+        }
+        .singer {
+          font-size: 24px;
+          font-weight: bold;
+          color: $darkTextColor;
+          line-height: 2;
+        }
+        .album {
+          font-size: 18px;
+          color: $darkTextColor;
         }
       }
     }

@@ -1,0 +1,22 @@
+.tracker {
+  width: 100%;
+  min-width: 400px;
+  height: 20px;
+  background: #DEDDE3;
+  box-shadow: -3px -3px 5px #ffffff, 3px 3px 5px rgb(0 0 0 / 5%), inset 3px 3px 5px rgb(0 0 0 / 5%), inset -3px -3px 5px #ffffff;
+  border-radius: 37px;
+  .wrapper {
+    input {
+      width: 99%;
+      min-width: 400px !important;
+    }
+    input[type=range],
+      ::-moz-range-track,
+      ::-ms-track {
+      -webkit-appearance: none;
+      background-color: red;
+      width: 250px;
+      height:20px;
+    }
+  }
+}
